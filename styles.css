@@ -1,0 +1,67 @@
+/* Default styles for all devices, including small devices (below 768px) */
+body {
+  align-content: top;
+}
+
+h1 {
+  text-align: center;
+}
+
+div {
+  position: relative;
+  border: solid black 2px;
+  background-color: rgb(104, 95, 95);
+  margin-top: 30px;
+}
+
+p {
+  margin-top: 20px;
+}
+
+span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: solid black 2px;
+  border-top: 0px;
+  border-right: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.sp1 {
+  background-color: rgb(193, 110, 169);
+}
+
+.sp2 {
+  background-color: rgba(196, 30, 30, 0.805);
+}
+
+.sp3 {
+  background-color: rgb(215, 206, 140);
+}
+
+/* Media queries for specific viewport widths */
+
+/* Medium-sized devices: 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .div1, .div2 {
+    display: inline-block;
+    width: 48%;
+  }
+  .div2 {
+    margin-left: 15px;
+  }
+}
+
+/* Large devices: 992px and above */
+@media (min-width: 992px) {
+  div {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+  }
+  .div2, .div3 {
+    margin-left: 20px;
+  }
+}
